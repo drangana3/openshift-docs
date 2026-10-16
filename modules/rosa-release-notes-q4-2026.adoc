@@ -8,7 +8,17 @@
 [role="_abstract"]
 The following items were added during the fourth quarter of 2026.
 
+ifdef::openshift-rosa[]
+IMDSv2 required by default::
++
+New {product-title} clusters now default to requiring Amazon EC2 Instance Metadata Service Version 2 (IMDSv2). The IMDS setting is configured at cluster creation and applies to machine pools in the cluster. Existing clusters are unaffected and retain their current Instance Metadata Service (IMDS) configuration. For more information regarding IMDS, see link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html[Instance metadata and user data] in the AWS documentation.
+endif::openshift-rosa[]
+
 ifdef::openshift-rosa-hcp[]
+IMDSv2 required by default::
++
+New {product-title} clusters and new machine pools now default to requiring Amazon EC2 Instance Metadata Service Version 2 (IMDSv2). Existing clusters and machine pools are unaffected and retain their current Instance Metadata Service (IMDS) configuration. For more information regarding IMDS, see link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html[Instance metadata and user data] in the AWS documentation.
+
 BGP routing for OpenShift Virtualization on AWS::
 +
 Border Gateway Protocol (BGP) Cloud Connector integrates {product-title} with {aws-short} Route Server allowing direct, routed connectivity to {VirtProductName} virtual machines (VMs) on {aws-short}. For more information, see the following documentation:

@@ -4,6 +4,9 @@
 // What's new for Red Hat OpenShift Service on AWS classic architecture
 include::modules/rosa-classic-whats-new.adoc[leveloffset=+0,chunk="to-content"]
 
+// Q4 2026
+include::modules/rosa-release-notes-q4-2026.adoc[leveloffset=+1,toc="no"]
+
 // Q3 2026
 include::modules/rosa-release-notes-q3-2026.adoc[leveloffset=+1,toc="no"]
 
